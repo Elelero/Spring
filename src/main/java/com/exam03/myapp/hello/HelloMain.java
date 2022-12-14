@@ -1,4 +1,4 @@
-package com.sample.myapp;
+package com.exam03.myapp.hello;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
