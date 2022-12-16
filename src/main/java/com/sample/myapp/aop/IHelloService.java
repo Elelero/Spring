@@ -1,4 +1,4 @@
-package com.sample.myapp;
+package com.sample.myapp.aop;
 
 public interface IHelloService {
 

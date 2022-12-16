@@ -1,4 +1,4 @@
-package com.sample.myapp;
+package com.sample.myapp.aop;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -9,6 +9,8 @@ public class HelloMain {
 		HelloController controller = context.getBean(HelloController.class);
 		System.out.println("-----------------------");
 		controller.hello("홍길동");
+		System.out.println();
+		controller.goodbye("무야호");
 		System.out.println("-----------------------");
 		context.close();
 	}
