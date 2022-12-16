@@ -5,68 +5,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 	
+	<bean id="helloService" class="com.exam03.myapp.hello.HelloService"/>
 	
-	
-	<!-- 교수님이랑 같이한 실습 -->
-<!-- 	<bean id="helloService" class="com.exam03.myapp.HelloService"></bean> -->
-	<!-- = HelloService helloService = new HelloService(); -->
-	
-<!-- 	<bean id="helloController" class="com.exam03.myapp.HelloController">
-		<property name="helloService" ref="helloService"></property>
-		<constructor-arg ref="helloService"></constructor-arg>
-		 	= HelloController helloController = new HelloController(helloService);
-	</bean> -->
-	
-	<!-- 예제-컬렉션 타입 의존성 설정 -->
-<!-- 	<bean id="personBean" class="com.exam03.myapp.collection.Person">
-		<property name="name" value="Hello"/>
-		<property name="age" value="10"/>
-	</bean>
-	
-	<bean id="customer" class="com.exam03.myapp.collection.Customer">
-		<property name="lists">
-			<list>
-				<value>1</value>
-				<ref bean="personBean"/>
-				<bean class="com.exam03.myapp.collection.Person">
-					<property name="name" value="SongMin"/>
-					<property name="age" value="26"/>
-				</bean>
-			</list>
-		</property>
-		
-		<property name="sets">
-			<set>
-				<value>2</value>
-				<ref bean="personBean"/>
-				<bean class="com.exam03.myapp.collection.Person">
-					<property name="name" value="Hi"/>
-					<property name="age" value="15"/>
-				</bean>
-			</set>
-		</property>
-		
-		<property name="maps">
-			<map>
-				<entry key="Key1" value="3"/>
-				<entry key="Key2" value-ref="personBean"/>
-				<entry key="Key3">
-					<bean class="com.exam03.myapp.collection.Person">
-						<property name="name" value="HyunSoo"/>					
-						<property name="age" value="8"/>					
-					</bean>
-				</entry>
-			</map>
-		</property>
-		
-		<property name="props">
-			<props>
-				<prop key="webmaster">webmaster@naver.com</prop>
-				<prop key="support">support@naver.com</prop>
-			</props>
-		</property>
-	</bean> -->
-	
-	<!-- 어노테이션 -->
-	<context:component-scan base-package="com.exam03.myapp"/>
 </beans>
